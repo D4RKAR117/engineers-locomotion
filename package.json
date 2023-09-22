@@ -1,0 +1,29 @@
+{
+	"name": "engineers-locomotion",
+	"version": "0.0.1",
+	"packageManager": "pnpm@8.7.6",
+	"engineStrict": true,
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"private": true,
+	"scripts": {
+		"prepare": "husky install",
+		"commit": "cz",
+		"release": "commit-and-tag-version --releaseCommitMessageFormat \"chore(release): {{currentTag}} [skip ci]\" && ./utils/scripts/bump-version.sh"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.7.1",
+		"@commitlint/config-conventional": "^17.7.0",
+		"@commitlint/cz-commitlint": "^17.7.1",
+		"@commitlint/format": "^17.4.4",
+		"commit-and-tag-version": "^11.2.3",
+		"commitizen": "^4.3.0",
+		"husky": "^8.0.3"
+	},
+	"config": {
+		"commitizen": {
+			"path": "@commitlint/cz-commitlint"
+		}
+	}
+}
