@@ -25,5 +25,8 @@
 		"commitizen": {
 			"path": "@commitlint/cz-commitlint"
 		}
+	},
+	"volta": {
+		"node": "18.18.0"
 	}
 }
