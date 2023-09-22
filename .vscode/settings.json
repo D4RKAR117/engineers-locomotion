@@ -1,5 +1,7 @@
 {
 	"java.configuration.updateBuildConfiguration": "automatic",
 	"java.compile.nullAnalysis.mode": "automatic",
-	"cSpell.words": ["darkar", "modid"]
+	"cSpell.words": ["darkar", "modid"],
+	"java.completion.importOrder": ["", "javax", "java", "#"],
+	"java.format.enabled": true
 }
