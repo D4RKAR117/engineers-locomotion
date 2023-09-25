@@ -1,6 +1,7 @@
 package net.darkar.engineers_locomotion;
 
 import com.mojang.logging.LogUtils;
+import net.darkar.engineers_locomotion.block.AllBlocks;
 import net.darkar.engineers_locomotion.item.AllItems;
 import net.darkar.engineers_locomotion.item.AllCreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -29,6 +30,7 @@ public class EngineersLocomotionMod
 		
 		// Load all the custom deferred registries
 		AllItems.register(modEventBus);
+		AllBlocks.register(modEventBus);
 		AllCreativeModeTabs.register(modEventBus);
 
         // Register the commonSetup method for mod loading
