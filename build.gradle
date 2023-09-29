@@ -123,6 +123,9 @@ repositories {
 	// flatDir {
 	//     dir 'libs'
 	// }
+
+	// AzureDoom's Maven Repo
+	maven { url = 'https://libs.azuredoom.com:4443/mods' }
 }
 
 dependencies {
@@ -144,6 +147,9 @@ dependencies {
 	// The group id is ignored when searching -- in this case, it is "blank"
 	// implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
 
+	// AzureDoom's Azure Lib
+	implementation fg.deobf("mod.azure.azurelib:azurelib-neo-${minecraft_version}:${azure_lib_version}")
+	
 	// For more info:
 	// http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
 	// http://www.gradle.org/docs/current/userguide/dependency_management.html
